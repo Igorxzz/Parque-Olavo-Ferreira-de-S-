@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História</title>
+</head>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0; /* Fundo claro para contraste */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2b3d33; /* Verde escuro */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #35544b; /* Verde médio escuro */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2b3d33; /* Verde escuro ao passar o mouse */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #27ae60; /* Verde claro para destaque */
+}
+
+.video-mapa {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.video, .mapa {
+    width: 48%;
+}
+
+.video iframe, .mapa iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exposicoes {
+    margin-bottom: 40px;
+}
+
+.exposicoes h2 {
+    font-size: 24px;
+    color: #27ae60; /* Verde claro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exposicoes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.exposicoes ul li {
+    background-color: #dfe6e9; /* Fundo claro */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.exposicoes ul li:hover {
+    background-color: #bdc3c7; /* Cinza mais escuro ao passar o mouse */
+}
+
+.historia {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.historia h2 {
+    font-size: 24px;
+    color: #1e824c; /* Verde mais escuro */
+    margin-bottom: 10px;
+}
+
+.historia p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.fotos {
+    margin-bottom: 40px;
+}
+
+.fotos h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #27ae60; /* Verde claro */
+    margin-bottom: 20px;
+}
+
+.fotos img {
+    width: 32%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.05);
+}
+
+.visita {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.visita h2 {
+    font-size: 24px;
+    color: #1e824c; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+.visita form label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+button {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e824c; /* Mais escuro ao passar o mouse */
+}
+
+footer {
+    background-color: #2b3d33;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+</style>
+<body>
+    <header>
+        <h1>Bem-vindo à Nossa História</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="home.html">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="contato].html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="historia">
+            <h2>Nossa História</h2>
+            <p>
+                Fundada há mais de 50 anos, nossa instituição tem um longo legado de preservação cultural e avanço educacional. O que começou como um pequeno projeto local, cresceu para se tornar um dos principais centros culturais da região. 
+            </p>
+            <p>
+                Ao longo das décadas, nossa missão sempre foi fornecer uma plataforma para que as gerações futuras aprendam e cresçam por meio da compreensão do passado. Exposições, eventos comunitários e programas educativos são apenas algumas das maneiras pelas quais impactamos a sociedade.
+            </p>
+            <p>
+                Hoje, continuamos a inovar, mantendo viva a nossa herança enquanto olhamos para o futuro, com o compromisso de sempre oferecer experiências culturais inesquecíveis.
+            </p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>

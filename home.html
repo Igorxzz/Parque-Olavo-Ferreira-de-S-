@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parque Olavo Ferreira de Sá</title>
+    <link rel="stylesheet" href="home.css">
+    </head>
+    <style>
+        * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #e0e0e0; /* Fundo claro para contraste */
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2b3d33; /* Verde escuro */
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+}
+
+nav {
+    background-color: #35544b; /* Verde médio escuro */
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #2b3d33; /* Verde escuro ao passar o mouse */
+    border-radius: 5px;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.intro img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.intro h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    color: #27ae60; /* Verde claro para destaque */
+}
+
+.video-mapa {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0;
+}
+
+.video, .mapa {
+    width: 48%;
+}
+
+.video iframe, .mapa iframe {
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.exposicoes {
+    margin-bottom: 40px;
+}
+
+.exposicoes h2 {
+    font-size: 24px;
+    color: #27ae60; /* Verde claro */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.exposicoes ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.exposicoes ul li {
+    background-color: #dfe6e9; /* Fundo claro */
+    padding: 10px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.exposicoes ul li:hover {
+    background-color: #bdc3c7; /* Cinza mais escuro ao passar o mouse */
+}
+
+.historia {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.historia h2 {
+    font-size: 24px;
+    color: #1e824c; /* Verde mais escuro */
+    margin-bottom: 10px;
+}
+
+.historia p {
+    font-size: 18px;
+    color: #333;
+    line-height: 1.8;
+    padding: 0 20px;
+}
+
+.fotos {
+    margin-bottom: 40px;
+}
+
+.fotos h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #27ae60; /* Verde claro */
+    margin-bottom: 20px;
+}
+
+.fotos img {
+    width: 32%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.fotos img:hover {
+    transform: scale(1.05);
+}
+
+.visita {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.visita h2 {
+    font-size: 24px;
+    color: #1e824c; /* Verde escuro */
+    margin-bottom: 20px;
+}
+
+.visita form label {
+    font-size: 18px;
+    margin-right: 10px;
+    color: #333;
+}
+
+button {
+    background-color: #27ae60;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1e824c; /* Mais escuro ao passar o mouse */
+}
+
+footer {
+    background-color: #2b3d33;
+    color: #ffffff;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+    </style>
+<body>
+    <header>
+        <h1>Parque Olavo Ferreira de Sá</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="historia.html">História</a></li>
+            <li><a href="contato].html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section class="intro">
+            <img src="https://img.cmswebsg.com.br/portaljnn.com/image?src=https://portaljnn.com/images/noticias/25241/27094309_lago_fapi_.jpeg&w=1200&h=630&output=jpg">
+            <h2>Entrada principal do Parque</h2>
+        </section>
+
+        <section class="video-mapa">
+            <div class="video">
+                <h2>Vídeo: Conheça o Parque</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MYMX76IqaYc?si=2XXnR_pDCfFsyzO9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+
+            <div class="mapa">
+                <h2>Mapa: Encontre o Parque</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3757.041764894269!2d-49.8677!3d-22.979!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x12345!2sParque+Olavo+Ferreira+de+S%C3%A1!5e0!3m2!1spt-BR!2sbr!4v1234567890" width="560" height="315" frameborder="0" allowfullscreen></iframe>
+            </div>
+        </section>
+
+        <section class="exposicoes">
+            <h2>Exposições</h2>
+            <ul>
+                <li>Trilhas ecológicas</li>
+                <li>Projeto de conscientização ambiental</li>
+                <li>Eventos culturais e esportivos</li>
+                <li>Feiras e exposições de artesanato local</li>
+            </ul>
+        </section>
+
+        <section class="historia">
+            <h2>200 Anos de História</h2>
+            <p>O Parque Olavo Ferreira de Sá foi inaugurado como parte das comemorações do centenário da cidade de Ourinhos. Hoje, é um espaço dedicado à preservação ambiental e ao lazer da população, recebendo milhares de visitantes todos os anos.</p>
+        </section>
+
+        <section class="fotos">
+            <h2>Galeria de Fotos</h2>
+            <img src="https://turismo.ourinhos.sp.gov.br/fotos/97e93f6c402260b4553edc565bf6e631-19-11-2021-15-12-30.jpg">
+            <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0d/55/3e/18/lago-do-prque.jpg?w=1200&h=-1&s=1">
+            <img src="https://i1.wp.com/conteudo.solutudo.com.br/wp-content/uploads/2022/05/lago-fapi-1024x695.png">
+        </section>
+    </main>
+
+    <footer>
+        <p>2024 Parque Olavo Ferreira de Sá - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
